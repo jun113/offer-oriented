@@ -13,10 +13,10 @@ class Solution {
      * @param root TreeNode类 the root of binary tree
      * @return int整型vector<vector<>>
      */
+  //分别按照二叉树先序，中序和后序打印所有的节点。
   vector<vector<int> > threeOrders(TreeNode* root) {
-        // write code here
     if (!root) return vector<vector<int>> ();
-    vector<vector <int>> result(3);
+    vector<vector<int> > result(3);
     preorderTraversalNotRecursion(root,  result[0]);
     midorderTraversalNotRecursion(root,  result[1]);
     postorderTraversalNotRecursion(root, result[2]);
