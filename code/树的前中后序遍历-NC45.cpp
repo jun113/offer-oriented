@@ -10,10 +10,10 @@ class Solution {
  public:
     /**
      * 
-     * @param root TreeNodeÀà the root of binary tree
-     * @return intÕûĞÍvector<vector<>>
+     * @param root TreeNodeç±» the root of binary tree
+     * @return intæ•´å‹vector<vector<>>
      */
-  //·Ö±ğ°´ÕÕ¶ş²æÊ÷ÏÈĞò£¬ÖĞĞòºÍºóĞò´òÓ¡ËùÓĞµÄ½Úµã¡£
+  //åˆ†åˆ«æŒ‰ç…§äºŒå‰æ ‘å…ˆåºï¼Œä¸­åºå’Œååºæ‰“å°æ‰€æœ‰çš„èŠ‚ç‚¹ã€‚
   vector<vector<int> > threeOrders(TreeNode* root) {
     if (!root) return vector<vector<int>> ();
     vector<vector<int> > result(3);
@@ -23,7 +23,7 @@ class Solution {
     return result;
   }
  private:
-  // Ç°Ğò·Çµİ¹é±éÀú
+  // éé€’å½’å‰åºéå†
   void preorderTraversalNotRecursion(TreeNode *root, vector<int> &result) {
     stack<TreeNode*> st;
     st.push(root);
@@ -43,7 +43,7 @@ class Solution {
     }
     return ;
   }
-  // ÖĞĞò·Çµİ¹é±éÀú
+  // éé€’å½’ä¸­åºéå†
   void midorderTraversalNotRecursion(TreeNode *root, vector<int> &result) {
     stack<TreeNode*> st;
     st.push(root);
@@ -63,7 +63,7 @@ class Solution {
     }
     return ;
   }
-  // ºóĞø·Çµİ¹é±éÀú
+  // éé€’å½’ååºéå†
   void postorderTraversalNotRecursion(TreeNode *root, vector<int> &result) {
     stack<TreeNode*> st;
     st.push(root);

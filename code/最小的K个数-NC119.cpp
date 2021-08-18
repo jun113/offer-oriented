@@ -4,7 +4,7 @@ class Solution {
     if (k == 0) return vector<int> ();
     if (k >= input.size()) return input;
     
-    // »ùÓÚ¿ìÅÅ
+    // åŸºäºå¿«æ’çš„æœ€å°Kä¸ªæ•°
     QuickSort(input, 0, input.size()-1, k);
     return vector<int>({input.begin(), input.begin() + k});
   }
