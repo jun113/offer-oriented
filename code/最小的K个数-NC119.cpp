@@ -8,7 +8,7 @@ class Solution {
     return vector<int>({input.begin(), input.begin() + k});
   }
  private:
- //------------------------------------------
+ //-------------------------------------------
   // 基于快排的最小K个数
   void QuickSort(vector<int> &arr, const int low, const int high, const int k) {
     if (low > high) return ;
