@@ -23,6 +23,7 @@ class Solution {
     return result;
   }
  private:
+  // 前序非递归遍历
   void preorderTraversalNotRecursion(TreeNode *root, vector<int> &result) {
     stack<TreeNode*> st;
     st.push(root);
@@ -42,6 +43,7 @@ class Solution {
     }
     return ;
   }
+  // 中序非递归遍历
   void midorderTraversalNotRecursion(TreeNode *root, vector<int> &result) {
     stack<TreeNode*> st;
     st.push(root);
@@ -61,6 +63,7 @@ class Solution {
     }
     return ;
   }
+  // 后续非递归遍历
   void postorderTraversalNotRecursion(TreeNode *root, vector<int> &result) {
     stack<TreeNode*> st;
     st.push(root);

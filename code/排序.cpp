@@ -7,12 +7,13 @@ class Solution {
      * @return int整型vector
      */
   vector<int> MySort(vector<int>& arr) {
-    // write code here
     if (arr.size() <= 1) return arr;
     QuickSort(arr, 0, arr.size()-1);
     return arr;
   }
  private:
+  //---------------------------------------
+  // 快速排序 
   void QuickSort(vector<int> &arr, int low, int high) {
     if (low > high) return ;
     int privot = Partition(arr, low, high);
@@ -30,4 +31,5 @@ class Solution {
     }
     return low;
   }
+  //---------------------------------------
 };
