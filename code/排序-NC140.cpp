@@ -13,7 +13,7 @@ class Solution {
   }
  private:
   //---------------------------------------
-  // 快速排序 
+  // 快速排序
   void QuickSort(vector<int> &arr, int low, int high) {
     if (low > high) return ;
     int privot = Partition(arr, low, high);
