@@ -4,11 +4,12 @@ class Solution {
     if (k == 0) return vector<int> ();
     if (k >= input.size()) return input;
 
-    // 基于快排的最小K个数
     QuickSort(input, 0, input.size()-1, k);
     return vector<int>({input.begin(), input.begin() + k});
   }
  private:
+ //------------------------------------------
+  // 基于快排的最小K个数
   void QuickSort(vector<int> &arr, const int low, const int high, const int k) {
     if (low > high) return ;
     int privot = Partition(arr, low, high);
@@ -27,4 +28,5 @@ class Solution {
     arr[low] = temp;
     return low;
   }
+ //------------------------------------------
 };
