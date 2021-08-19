@@ -2,13 +2,13 @@ class Solution {
  public:
     /**
      *
-     * @param numbers int整型vector
-     * @param target int整型
-     * @return int整型vector
+     * @param numbers intvector
+     * @param target int
+     * @return int vector
      */
   vector<int> twoSum(vector<int>& numbers, int target) {
-    // 牛客第 61 题, 小标从1开始算
-    // Leetcode 第 1 题
+    // nowcoder id: 61
+    // Leetcode id: 1
     if (numbers.size() <= 1) return numbers;
     vector<int> result;
     myTwoSum(numbers, target, result);
