@@ -36,7 +36,7 @@ public:
       next = cur->next;
       cur->next = pre;
       pre = cur;
-      cur =next;
+      cur = next;
     }
     head->next = myreverseKGroupRecursion(next, k);
     return pre;
