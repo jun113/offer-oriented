@@ -1,4 +1,8 @@
 /*
+  nowcoder id: 33
+  leetcode id: 21
+*/
+/*
 struct ListNode {
 	int val;
 	struct ListNode *next;

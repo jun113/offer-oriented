@@ -1,4 +1,7 @@
 /*
+  nowcoder id: 78
+*/
+/*
 struct ListNode {
 	int val;
 	struct ListNode *next;

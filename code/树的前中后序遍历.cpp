@@ -1,3 +1,4 @@
+// nowcoder id: 45
 /**
  * struct TreeNode {
  *	int val;
@@ -9,11 +10,11 @@
 class Solution {
  public:
     /**
-     * 
-     * @param root TreeNode类 the root of binary tree
+     *
+     * @param root TreeNode�? the root of binary tree
      * @return int整型vector<vector<>>
      */
-  //分别按照二叉树先序，中序和后序打印所有的节点。
+  //分别按照二叉树先序，中序和后序打印所有的节点�?
   vector<vector<int> > threeOrders(TreeNode* root) {
     if (!root) return vector<vector<int>> ();
     vector<vector<int> > result(3);

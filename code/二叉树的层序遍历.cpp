@@ -1,3 +1,6 @@
+/*
+  nowcoder id: 15
+*/
 /**
  * struct TreeNode {
  *	int val;
@@ -9,14 +12,14 @@
 class Solution {
  public:
     /**
-     * 
-     * @param root TreeNode类 
+     *
+     * @param root TreeNode�?
      * @return int整型vector<vector<>>
      */
   vector<vector<int> > levelOrder(TreeNode* root) {
     if (!root) return vector<vector<int>> ();
     vector<vector<int>> ans;
-    
+
     levelOrderDeque(root, ans);
     return ans;
   }

@@ -1,3 +1,4 @@
+// nowcoder id: 88
 class Solution {
  public:
   int findKth(vector<int> a, int n, int K) {
@@ -6,7 +7,7 @@ class Solution {
   }
  private:
 //--------------------------------------------------------
-  // 基于快排，找出第K大数，包括重复元素 不用去重
+  // 基于快排，找出第K大数，包括重复元�? 不用去重
   void QuickSort(vector<int> &arr, const int low, const int high, const int k) {
     if (low > high) return ;
     int privot = Partition(arr, low, high);
