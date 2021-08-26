@@ -18,7 +18,7 @@ class Solution {
         dp(i,i+1) <- s(s[i] == s[i+1]);
         dp(i,j)   <- dp(i+1,j-1) .and. (s[i] == s[j])
     */
-    vector<vector<bool>> dp(s.size(), vector<bool>(s.size()));
+    vector<vector<bool>> dp(s.size(), vector<bool>(s.size(), false));
 
     for (int l = 0; l < s.size(); ++l) {
       for (int i = 0; i + l < s.size(); ++i) {
