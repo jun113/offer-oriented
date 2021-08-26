@@ -20,6 +20,7 @@ class Solution {
     if (*(p + 1) != '*') {
       return *s == *p || (*p == '.' && *s != '\0') ? match(s + 1, p + 1) : false;
     } else {
+      //                                            匹配0个'*'前字符     匹配'*'前字符        不匹配
       return *s == *p || (*p == '.' && *s != '\0') ? match(s, p + 2) || match(s + 1, p) : match(s, p + 2);
     }
   }
