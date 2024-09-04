@@ -17,9 +17,9 @@ class Solution {
   // 快速排�?
   void QuickSort(vector<int> &arr, int low, int high) {
     if (low > high) return ;
-    int privot = Partition(arr, low, high);
-    QuickSort(arr, low, privot-1);
-    QuickSort(arr, privot+1, high);
+    int pivot = Partition(arr, low, high);
+    QuickSort(arr, low, pivot-1);
+    QuickSort(arr, pivot+1, high);
     return ;
   }
   int Partition(vector<int> &arr, int low, int high) {
